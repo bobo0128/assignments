@@ -1,0 +1,15 @@
+.center-arial {
+    text-align: center;
+}
+h1 {
+    font-family: 'Ubuntu Mono';
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#name {
+    text-decoration: solid;
+    color:blueviolet
+}
