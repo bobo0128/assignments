@@ -98,34 +98,10 @@
         if (event.key === "Enter") {
           console.log("input line:" + inputLine.innerText);
           const command = inputLine.innerText.replace(">", "").trim();
-          // console.log('command==========' + command + "," + command.valueOf());
 
-          // let output = inputLine.innerText;
           let output = inputLine.innerText + "<br>" + 
             COMMANDS[command] ||
             'Command not found. Try "list" for available commands.';
-          // switch (command) {
-          //     case 'list':
-          //         output += `
-          //     <ul>
-          //         <li onclick="simulateCommand('whoami')">whoami</li>
-          //         <li onclick="simulateCommand('bio')">bio</li>
-          //         <li onclick="simulateCommand('list')">list</li>
-          //     </ul>`;
-          //         break;
-
-          //     case 'whoami':
-          //         output += '<br>I am a full-stack developer with expertise in Java, React, and web technologies.';
-          //         break;
-
-          //     case 'bio':
-          //         output += '<br>Bio: A passionate developer with a focus on building scalable and secure applications.';
-          //         break;
-
-          //     default:
-          //         output += '<br>Command not found. Try "list" for available commands.';
-
-          // }
 
           const newOutputLine = document.createElement("div");
           newOutputLine.classList.add("output-line");
